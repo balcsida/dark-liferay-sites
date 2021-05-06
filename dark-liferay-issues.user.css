@@ -317,7 +317,21 @@
   .ghx-kanplan-ack {
     box-shadow: 0 2px 5px 0 #181f28bb, transparent 0 0 0;
   }
-
+  
+  /*
+  ** Header to use official Liferay secondary color
+  */
+  .aui-header {
+    background: #134194
+  }
+  
+  /*
+  ** Make badges visible (e.g. watchers)
+  */  
+  aui-badge, .aui-badge{
+    background: #fff;
+  }
+  
   /*
   ** Miscellaneous
   */

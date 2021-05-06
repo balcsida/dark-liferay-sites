@@ -6,6 +6,16 @@
 @author         github.com/lgdd
 @updateURL      https://raw.githubusercontent.com/lgdd/dark-liferay-sites/main/dark-liferay-issues.user.css
 ==/UserStyle== */
+
+/*
+** Zendesk app background fix
+*/
+@-moz-document url-prefix("https://jiraplugin.zendesk.com/integrations/jira/app") {
+  body {
+    background: transparent;
+  }
+}
+
 @-moz-document domain("issues.liferay.com") {
   /*
   ** Backgrounds (Dark)

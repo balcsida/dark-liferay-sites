@@ -343,6 +343,15 @@
   }
   
   /*
+  ** Agile board issue view fixes
+  */
+  .ghx-detail-issue,
+  .ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .module.toggle-wrap .toggle-title{
+    color: inherit;
+    background: inherit;
+  }
+
+  /*
   ** Miscellaneous
   */
   .ui-sidebar::after {

@@ -6,6 +6,15 @@
 @author         github.com/lgdd
 @updateURL      https://raw.githubusercontent.com/lgdd/dark-liferay-sites/main/dark-liferay-issues.user.css
 ==/UserStyle== */
+
+/*
+ * Zendesk app background fix
+ */
+@-moz-document url-prefix("https://jiraplugin.zendesk.com/integrations/jira/app") {
+  body {
+    background: transparent;
+  }
+}
 @-moz-document domain("issues.liferay.com") {
   /*
   ** Backgrounds (Dark)
@@ -27,6 +36,7 @@
   .issue-body-content .module > .mod-header > h4,
   .issue-body-content .module > .mod-header > h5,
   .issue-body-content .module > .mod-header > h6,
+  .ghx-detail-view.gh-editable-detail-view .ghx-detail-contents .issue-body-content,
   .simple-issue-list .inline-issue-create-container,
   .details-layout .split-view .list-results-panel,
   .issue-data-block:hover,
@@ -317,26 +327,21 @@
   .ghx-kanplan-ack {
     box-shadow: 0 2px 5px 0 #181f28bb, transparent 0 0 0;
   }
-  
-  /*
-  ** Header to use official Liferay secondary color
-  */
-  .aui-header {
-    background: #134194
-  }
-  
-  /*
-  ** Make badges visible (e.g. watchers)
-  */  
-  aui-badge, .aui-badge{
-    background: #fff;
-  }
-  
+
   /*
   ** Miscellaneous
   */
   .ui-sidebar::after {
     left: 0;
     width: 2px;
+  }
+  
+  /*
+  ** Agile board issue view fixes
+  */
+  .ghx-detail-issue,
+  .ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .module.toggle-wrap .toggle-title{
+    color: inherit;
+    background: inherit;
   }
 }
